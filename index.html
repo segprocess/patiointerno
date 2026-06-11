@@ -439,7 +439,16 @@ titulo:"🔍 Busca",
 responsavel:"Motoristas",
 acontece:"Pesquisar a localização do caminhão.",
 registro:"Consulta.",
-objetivo:"Localizar rapidamente."
+objetivo:"Localizar rapidamente.",
+video:`<iframe
+src="https://segalasalimentos-my.sharepoint.com/personal/eduardo_seibel_segalas_com_br/_layouts/15/embed.aspx?UniqueId=35a157f9-da7b-4328-92ed-e9c7f7d63055&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+width="100%"
+height="450"
+frameborder="0"
+scrolling="no"
+allowfullscreen
+title="Busca Caminhão Freteiro">
+</iframe>`
 },
 
 8:{
@@ -493,6 +502,17 @@ ${e.registro}
 <b>Objetivo:</b><br>
 ${e.objetivo}
 </div>
+
+${e.video ? `
+<div class="info">
+<h3 style="margin-top:25px;color:#C00000;">
+🎥 Vídeo Demonstrativo
+</h3>
+<div style="margin-top:10px;">
+${e.video}
+</div>
+</div>
+` : ""}
 `;
 }
 
